@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как сделать свои мечты реальностью</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- Для слайдера используется библиотека https://swiperjs.com/
+    Для работы подключается бандл css, бандл js и описывается работа в script.js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container container-header">
+            <a href="#" class="header-logo"><img src="img/logo.png" alt="logo"></a>
+            <a href="#" class="header-logo320">
+                <!-- Этот логотип включается на 320пикс -->
+                <img src="img/logo320.png" alt="logo">
+            </a>
+            <div class="contacts-block">
+                <a href="tel:79999999999" class="contacts-phone">8 800 600 40 97</a>
+                <p class="contacts-text">Горячая линия</p>
+            </div>    
+        </div>
+        <div class="container container-line"></div>
+    </header>
+    <main class="main">
+        <div class="container container-main">
+            <section class="main-section">
+                <!-- Секция - левая часть основного раздела. Все, кроме слайдера -->
+                <div class="broadcast-info">
+                    <p class="broadcast-type">Прямой эфир</p>
+                    <p class="broadcast-time">19 ноября 16:00 мск</p>
+                </div>
+                <h1 class="title">Как сделать свои мечты реальностью</h1>
+    
+                    <ul class="main-list">
+                        <li class="main-list__item">Как связаны умение мечтать и успех в жизни?</li>
+                        <li class="main-list__item">Где брать ресурс для реализации своей мечты?</li>
+                        <li class="main-list__item">Главные ошибки при постановке цели</li>
+                        <li class="main-list__item">Мечты или планирование: как действовать, чтобы&nbsp;получать желаемое?</li>
+                    </ul>
+                <a href="#" class="btn-link">
+                    <button class="btn">Забронировать место</button>
+                </a>
+            </section>
+            <section class="slider-section">
+                <!-- Слайдер -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="speaker-block">
+                                <div class="speaker-block-photo">
+                                    <img class="speaker-photo" src="img/speaker1.png" alt="">
+                                    <p class="speaker-text">Ведущая эфира</p>
+                                </div>
+                                <div class="about-speaker">
+                                    <h2 class="name">Нинель Горбачева</h2>
+                                    <p class="profession">Коуч ICF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="speaker-block">
+                                <div class="speaker-block-photo">
+                                    <img class="speaker-photo" src="img/speaker2.png" alt="">
+                                    <p class="speaker-text">Ведущая эфира</p>
+                                </div>
+                                <div class="about-speaker">
+                                    <h2 class="name">Нинель Горбачева</h2>
+                                    <p class="profession">Коуч ICF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="speaker-block">
+                                <div class="speaker-block-photo">
+                                    <img class="speaker-photo" src="img/speaker3.png" alt="">
+                                    <p class="speaker-text">Ведущая эфира</p>
+                                </div>
+                                <div class="about-speaker">
+                                    <h2 class="name">Нинель Горбачева</h2>
+                                    <p class="profession">Коуч ICF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="speaker-block">
+                                <div class="speaker-block-photo">
+                                    <img class="speaker-photo" src="img/speaker4.png" alt="">
+                                    <p class="speaker-text">Ведущая эфира</p>
+                                </div>
+                                <div class="about-speaker">
+                                    <h2 class="name">Нинель Горбачева</h2>
+                                    <p class="profession">Коуч ICF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="speaker-block">
+                                <div class="speaker-block-photo">
+                                    <img class="speaker-photo" src="img/speaker5.png" alt="">
+                                    <p class="speaker-text">Ведущая эфира</p>
+                                </div>
+                                <div class="about-speaker">
+                                    <h2 class="name">Нинель Горбачева</h2>
+                                    <p class="profession">Коуч ICF</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-btn-wrapper">
+                    <!-- Обертка кнопок слайдера. Сделана для более удобного позиционирования кнопок -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="pagination-wrapper">
+                    <!-- Обертка точек слайдера. Сделана для более удобного позиционирования -->
+                    <div class="swiper-pagination"></div>  
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="popup-container">
+        <!-- Модальное окно/Попап окно -->
+		<form class="popup">
+			<p class="popup-text">Участие бесплатное</p>
+            <input type="email" class="form-input" placeholder="Ваш e-mail">
+			<input type="tel" class="form-input" placeholder="Ваше телефон">
+            <div class="checkbox-wrapper">
+                <input type="checkbox" class="checkbox">
+                <label for="checkbox" class="form-text">Даю <a href="#">согласие на обработку моих персональных данных</a></label>
+            </div>
+			<button type="submit" class="btn btn-popup">Забронировать место</button>
+		</form>
+        <a class="close-icon" href="#">
+            <!-- Крестик закрытия модального окна -->
+            <span></span>
+            <span></span>
+        </a>
+	</div>
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

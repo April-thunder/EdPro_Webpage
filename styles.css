@@ -1,0 +1,347 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Regular.woff2');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('./fonts/Montserrat-Bold.ttf');
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+	text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+    max-width: 1180px;
+}
+
+/* Начало стилей хедера */
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.container-line {
+    border-bottom: 1px solid #C6E1FC;
+    max-width: 1160px;
+    padding: 27px 10px 0 10px;
+}
+
+.contacts-block {
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+.header-logo320 {display: none;}
+
+.contacts-phone {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    background-image: url(img/phone-icon.png);
+    background-repeat: no-repeat;
+    padding-left: 37px;
+    transition: .5s;
+}
+
+.contacts-phone:hover {
+    color: #005CFF;
+    transition: .5s;
+}
+
+.contacts-text {
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: end;
+}
+
+.container-main {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Конец стилей хедера */
+
+.main-section {width: 680px;}
+
+.broadcast-info {display: flex;}
+
+.broadcast-type {
+    padding: 15px;
+    text-align: center;
+    background-color: #E9F5FE;
+    font-weight: 500;
+    width: 210px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.broadcast-time {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 11px 0 11px 40px;
+    margin-left: 31px;
+    letter-spacing: 0.2px;
+    background-image: url(img/calendar-icon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.title {
+    font-family: 'Montserrat Bold';
+    color: #005CFF;
+    font-size: 44px;
+    padding: 44px 0 33px 0;
+    line-height: 135%;
+}
+
+
+.main-list__item {
+    font-size: 20px;
+    line-height: 145%;
+    padding: 0px 20px 0px 37px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    background: url(img/list-icon.png);
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    letter-spacing: 0.2px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #005CFF;
+    border: none;
+    border-radius: 4px;
+    width: 330px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    margin-top: 38px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 5px 1px rgba(34, 60, 80, 0.6);
+    transition: 0.5s;
+}
+
+.slider-section {
+    position: absolute;
+    left: 810px;
+    max-width: 360px;
+    height: 480px;
+    border-radius: 8px;
+    background: #F7F7F8;
+    box-shadow: 0px 40px 40px rgba(19, 37, 49, 0.1); 
+}
+
+.speaker-block-photo {
+    position: relative;
+}
+
+.speaker-text {
+    position: absolute;
+    border-radius: 4px;
+    background: #C6E1FC;
+    opacity: 0.6;
+    top: 295px;
+    left: 30px;
+    width: 164px;
+    padding: 8px 22px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.speaker-photo {
+    width: 360px;
+    height: 360px;
+}
+
+.about-speaker {
+    margin-left: 30px;
+    margin-top: 28px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.profession {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Начало стилей слайдера */
+
+.swiper {position: relative;}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	display: none;
+}
+
+.swiper-btn-wrapper {
+    position: absolute;
+    top: 198px;
+}
+
+.pagination-wrapper {
+    position: absolute;
+    top: 525px;
+    width: 200px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.swiper-button-prev {
+    background-image: url(img/to-left-icon.png);
+    left: -79px !important;
+}
+
+.swiper-button-next {
+    background-image: url(img/to-right-icon.png); 
+    left: 389px !important;
+}
+
+.swiper-pagination {left: 78px !important;}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+/* Конец стилей слайдера */
+
+/* Всплывающее окно */
+
+.popup-container {
+	display: none;
+	position: fixed;
+	top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0; 
+	z-index: 12;
+	background: rgba(19, 38, 51, 0.55);
+}
+
+.popup {
+	position: absolute;
+	left: 50%;
+	top: 428px;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 468px;
+	background-color: white;
+	border-radius: 10px;
+	overflow: auto;
+	font-size: 14px;
+}
+
+.popup-text {
+	text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 0.6px;
+    margin-top: 57px;
+    margin-bottom: 32px;
+}
+
+.btn-popup {
+    width: 420px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 18px;
+}
+
+.form-input {
+    display: inline-block;
+    border: none;
+	font-size: 16px;
+	color: #5F5D5D;
+    outline: none;
+	padding: 21px 20px 21px 20px;
+	margin-bottom: 22px;
+    background: #EBF5FF;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 420px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.form-text {
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.form-text a {color: #005CFF;}
+
+.checkbox-wrapper {
+    width: 420px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+}
+
+.form__close {
+	background: #fff;
+	border: 1px solid #ff4e2e;
+	color: #ff4e2e;
+}
+
+.form__close:hover {
+	background: #ff4e2e;
+    color: #fff;
+}
+
+.close-icon span {
+	display: block;
+	height: 3px;
+	width: 30px;
+    position: absolute;
+    left: 1280px;
+    top: 40px;
+    bottom: 804px;
+    background: #FFFFFF;
+}
+
+.close-icon span:first-child {transform: rotate(45deg);}
+
+.close-icon span:last-child {transform: rotate(-45deg);}
