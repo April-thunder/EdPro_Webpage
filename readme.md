@@ -17,7 +17,7 @@ Exercise to Layouts building and Javascript skills
 
 ## Demo
 
-Click the link to see the page 
+Click the link to see the page https://april-thunder.github.io/EdPro_Webpage/ 
 
 
 
